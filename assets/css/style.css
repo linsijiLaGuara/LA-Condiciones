@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+
+* {
+    margin: 0;
+    background-color: aquamarine;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .img-card {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card .img-card.borde-activo {
+    border: 2px solid red;
+}
+
+.text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
