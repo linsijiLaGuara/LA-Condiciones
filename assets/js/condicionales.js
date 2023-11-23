@@ -51,13 +51,15 @@ function obtenerSeleccion() {
 
   if (password1 === "9" && password2 === "1" && password3 === "1") {
     document.getElementById("resultado").innerText = "Password 1 correcto 🔓";
-
-    
+    document.getElementById("imagen").src = "./assets/img/caja-abierta.png";
   } else {
-    document.getElementById("resultado").innerText = "¡Password incorrecta!  👀";
+    document.getElementById("resultado").innerText =
+      "¡Password incorrecta!  👀";
+    document.getElementById("imagen").src = "./assets/img/caja-fuerte.png";
   }
 
   if (password1 === "7" && password2 === "1" && password3 === "4") {
     document.getElementById("resultado").innerText = "Password 2 correcta  🔓";
+    document.getElementById("imagen").src = "./assets/img/caja-abierta.png";
   }
 }
