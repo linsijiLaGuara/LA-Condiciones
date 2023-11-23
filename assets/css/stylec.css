@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+
+* {
+    margin: 0;
+}
+
+.menu-seletion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    animation: cambiarFondo 3s linear infinite alternate-reverse;
+    background-size: 200% auto;
+    background-image: linear-gradient(to top,
+            #ffacf6,
+            #cec4ff,
+            #8bdaff,
+            #4decff,
+            #53f7ff,
+            #60faf5,
+            #70fdeb,
+            #81ffe1,
+            #71ffe6,
+            #5dffec,
+            #43fff2,
+            #0efff9);
+    transition: background-image 0.5s ease;
+
+}
+
+.menu-seletion:hover {
+    background-image: linear-gradient(to top, #ffacf6, #ffb4ee, #ffbde8, #ffc6e5, #ffd0e3, #ffd4ec, #fed8f6, #fbdcff, #dee2ff, #a4edff, #52f8ff, #0efff9);
+
+
+    }
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.card-stiker {
+    margin-bottom: 10px;
+}
+
+.img-stiker {
+    width: 300px;
+    height: 250px;
+}
+
+input {
+    margin-top: 10px;
+}
