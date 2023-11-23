@@ -1,3 +1,5 @@
+// ejercicios 3
+
 // Obtén la referencia a la imagen por su ID
 var miImagen = document.getElementById("miImagen");
 
@@ -8,40 +10,36 @@ miImagen.addEventListener("click", function () {
   this.classList.toggle("borde-activo");
 });
 
-const letra1 = document.querySelector("#letra1").value;
-const letra2 = document.querySelector("#letra2").value;
-const letra3 = document.querySelector("#letra3").value;
+//ejercicio 2
+function BtnVerificar() {
+  const stiker1 = parseInt(document.querySelector("#stiker1").value) || 0;
+  const stiker2 = parseInt(document.querySelector("#stiker2").value) || 0;
+  const stiker3 = parseInt(document.querySelector("#stiker3").value) || 0;
 
-function consultar() {
-  let btn = document.getElementById("consultar");
+  let cantidad = stiker1 + stiker2 + stiker3;
 
-  if (btn.classList.contains("bg-red")) {
-    btn.classList.remove("bg-red");
+  if (cantidad <= 10) {
+    var msg = `Llevas ${cantidad} stickers 💐`;
+
+    document.getElementById("texto").innerHTML = msg;
   } else {
-    btn.classList.add("bg-red");
+    var msg = ` !Llevas demasiados stickers! 🙀 `;
+
+    document.getElementById("texto").innerHTML = msg;
   }
+  if (cantidad == 0) {
+    var msg = `Llevas ${cantidad} stickers 🥲, llévate aunque sea uno soló 😕`;
 
-  // const letras = letra1 + letra2;
-  let clave_correcta =
-    letra1 == "a" && letra2 == "b" && letra3 == "c"
-      ? letra1 + letra2 + letra3
-      : false;
-  // let claveCorrecta;
-
-  if (!clave_correcta) {
-    // var msg = 'La clave es correcta: ' + letras;
-    var msg = `La clave es correcta: ${letra1} ${letra2} 🎉🎉🎉 ....., pero en tus sueños`;
-
-    document.getElementById("texto").innerText = msg;
-  } else if (letra1 == "a" && letra2 == "e" && letra3 == "i") {
-    // var msg = 'La clave es correcta: ' + letras;
-    var msg = `La clave esta bien: ${letra1} ${letra2} 🤣🤣🤣`;
-
-    document.getElementById("texto").innerText = msg;
-  } else {
-    var msg = "La clave es Incorrecta 😅";
-    // var msg = `La clave es correcta ${letras}` ;
-
-    document.getElementById("texto").innerText = msg;
+    document.getElementById("texto").innerHTML = msg;
   }
+}
+//funcion para limpiar lo input
+function resetInputs() {
+  // Obtiene todos los campos de entrada por su nombre de clase
+  var inputs = document.querySelectorAll('input[type="text"]');
+
+  // Itera sobre los campos de entrada y límpialos
+  inputs.forEach(function (input) {
+    input.value = "";
+  });
 }
