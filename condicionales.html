@@ -14,37 +14,46 @@
   </head>
 
   <body>
-    <main class="menu-seletion">
-      <section>
-        <div class="card-stiker">
-          <img
-            class="img-stiker"
-            src="./assets/img/react.png"
-            alt="react-stiker"
-          />
-        </div>
-        <input type="text" id="stiker1" />
+    <main class="menu-divition">
+      <section class="menu-seletion">
+        <section>
+          <div class="card-stiker">
+            <img
+              class="img-stiker"
+              src="./assets/img/react.png"
+              alt="react-stiker"
+            />
+            <input type="text" id="stiker1" />
+          </div>
+        </section>
+        <section>
+          <div class="card-stiker">
+            <img
+              class="img-stiker"
+              src="./assets/img/nodejs.png"
+              alt="nodejs-stiker"
+            />
+            <input type="text" id="stiker2" />
+          </div>
+        </section>
+        <section>
+          <div class="card-stiker">
+            <img
+              class="img-stiker"
+              src="./assets/img/nestjs.png"
+              alt="nestjs-stiker"
+            />
+            <input type="text" id="stiker3" />
+          </div>
+        </section>
       </section>
-      <section>
-        <div class="card-stiker">
-          <img
-            class="img-stiker"
-            src="./assets/img/nodejs.png"
-            alt="nodejs-stiker"
-          />
-        </div>
-        <input type="text" id="stiker2" />
-      </section>
-      <section>
-        <div class="card-stiker">
-          <img
-            class="img-stiker"
-            src="./assets/img/nestjs.png"
-            alt="nestjs-stiker"
-          />
-        </div>
-        <input type="text" id="stiker3" />
-      </section>
+
+      <div class="boton">
+        <h1 id="texto"></h1>
+        <button class="Btn-verificar" id="consultar" onclick="consultar()">
+          Verificar
+        </button>
+      </div>
     </main>
   </body>
 </html>
