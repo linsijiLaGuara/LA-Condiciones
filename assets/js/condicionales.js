@@ -20,16 +20,14 @@ function BtnVerificar() {
 
   if (cantidad <= 10) {
     var msg = `Llevas ${cantidad} stickers 💐`;
-
     document.getElementById("texto").innerHTML = msg;
   } else {
-    var msg = ` !Llevas demasiados stickers! 🙀 `;
-
+    var msg = ` ¡Llevas demasiados stickers! 🙀 `;
     document.getElementById("texto").innerHTML = msg;
   }
+
   if (cantidad == 0) {
     var msg = `Llevas ${cantidad} stickers 🥲, llévate aunque sea uno soló 😕`;
-
     document.getElementById("texto").innerHTML = msg;
   }
 }
@@ -42,4 +40,24 @@ function resetInputs() {
   inputs.forEach(function (input) {
     input.value = "";
   });
+}
+
+//ejercicio 3
+
+function obtenerSeleccion() {
+  const password1 = document.getElementById("password1").value;
+  const password2 = document.getElementById("password2").value;
+  const password3 = document.getElementById("password3").value;
+
+  if (password1 === "9" && password2 === "1" && password3 === "1") {
+    document.getElementById("resultado").innerText = "Password 1 correcto 🔓";
+
+    
+  } else {
+    document.getElementById("resultado").innerText = "¡Password incorrecta!  👀";
+  }
+
+  if (password1 === "7" && password2 === "1" && password3 === "4") {
+    document.getElementById("resultado").innerText = "Password 2 correcta  🔓";
+  }
 }

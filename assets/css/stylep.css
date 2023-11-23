@@ -4,7 +4,7 @@
     margin: 0;
 }
 
-.menu-divition {
+.manu-pasword {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,7 +29,7 @@
     transition: background-image 0.5s ease;
 }
 
-.menu-divition:hover {
+.manu-pasword:hover {
     background-image: linear-gradient(to top,
             #ffacf6,
             #ffb4ee,
@@ -45,83 +45,55 @@
             #0efff9);
 }
 
-.sections-container {
+.card {
     display: flex;
-    flex-wrap: wrap-reverse;
-    width: 100%;
-}
-
-section {
-    display: flex;
+    justify-content: center;
     align-items: center;
-    margin: 10px;
 }
 
-.card-stiker {
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
+.card .img-card {
+    max-width: 60%;
+    max-height: 60%;
 }
 
-.img-stiker {
-    width: 300px;
-    height: 250px;
-}
-
-input {
-    margin-top: 10px;
-}
-
-.boton {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    align-items: center;
-    gap: 10px;
-}
-
-.Btn-verificar {
-    margin-top: 10px;
-    font-size: 15px;
-    background-color: #3145f8;
-    border-bottom: #fd03e0;
-    border-radius: 3px;
-    color: white;
-}
-
-.Btn-verificar:hover {
-    background-color: #0a72a2;
-}
-
-.borrar {
-    margin-top: 10px;
-    font-size: 15px;
-    background-color: #0a72a2;
-    border-bottom: #fd03e0;
-    border-radius: 3px;
-    color: white;
-}
-
-.borrar:hover {
-    background-color: #071ffd;
-}
-
-h1 {
-
-    color: black;
-    font-family: 'Segoe UI';
-}
-
-p {
-
-    color: black;
-    font-family: 'Segoe UI';
-}
 
 .text-center {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: blue;
+    color: rgb(136, 123, 123);
     font-family: 'Segoe UI';
     margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.opciones {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+
+}
+
+.obtenerSeleccion {
+    margin-top: 10px;
+    font-size: 15px;
+    background-color: #0a72a2;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.obtenerSeleccion:hover {
+    background-color: blue;
+}
+
+.resultado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(136, 123, 123);
+    font-family: 'Segoe UI';
+
 }
